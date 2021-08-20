@@ -1,0 +1,101 @@
+/*
+Colors used:
+Background Color (Mint): #c7d9c9;
+Font Color (Light Black): #0B0B0B
+*/
+body {
+  background-color: #CEDED1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #0B0B0B;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #40356E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #40356E;
+}
+
+a:hover,
+a:focus {
+  color: #50BA52;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #5A7F82;
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #c7ccec;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #42416a;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #2A6E2B;
+  text-transform: uppercase;
+  border: 2px solid #2A6E2B;
+}
+
+.button.contact:hover {
+  background-color: #2A6E2B;
+  color: #ffffff;
+}
