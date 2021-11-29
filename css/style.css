@@ -159,7 +159,7 @@ footer {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 h2 {
@@ -168,19 +168,15 @@ h2 {
 
 header {
   background-color: #c7ccec;
-  text-align: center;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   position: relative;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -190,9 +186,30 @@ nav>ul>li>a {
   color: #4a4a4a;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -274,11 +291,31 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   .col-md-6 {
     width: 50%;
